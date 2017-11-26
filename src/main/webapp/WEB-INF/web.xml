@@ -1,0 +1,151 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	
+	<welcome-file-list>
+    	<welcome-file>index</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.IndexServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/validateuser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ShoppingCartServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.ShoppingCartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ShoppingCartServlet</servlet-name>
+		<url-pattern>/shoppingCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PaymentServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PaymentServlet</servlet-name>
+		<url-pattern>/payment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ItemDetailsServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.ItemDetailsServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ItemDetailsServlet</servlet-name>
+		<url-pattern>/viewItemDetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserDetailsServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.UserDetailsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserDetailsServlet</servlet-name>
+		<url-pattern>/viewUserDetails</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>LogisticServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.LogisticServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LogisticServlet</servlet-name>
+		<url-pattern>/logistics</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RequestServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.RequestServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RequestServlet</servlet-name>
+		<url-pattern>/requestSupplier</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.PurchaseServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>PurchaseServlet</servlet-name>
+		<url-pattern>/purchaseItem</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>OrderDetailsServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.OrderDetailsServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>OrderDetailsServlet</servlet-name>
+		<url-pattern>/viewOrderDetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.AdminServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeliveryServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.DeliveryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeliveryServlet</servlet-name>
+		<url-pattern>/delivery</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.fdmgroup.servlets.RegisterServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/registeruser</url-pattern>
+	</servlet-mapping>
+
+	
+	<listener>
+		<listener-class>com.fdmgroup.listeners.ApplicationLoadedListener</listener-class>
+	</listener>
+	
+</web-app>
